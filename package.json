@@ -1,5 +1,5 @@
 {
-  "name": "lesscss-make",
+  "name": "lessc-make",
   "version": "0.1.0",
   "description": "A front-end for less-js that works well with Makefiles.",
   "main": "src/lessc_make.js",

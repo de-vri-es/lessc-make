@@ -1,15 +1,17 @@
 {
   "name": "lesscss-make",
   "version": "0.1.0",
-  "description": "front-end for lesscss that works well with Makefiles",
-  "main": "index.js",
+  "description": "A front-end for less-js that works well with Makefiles.",
+  "main": "src/lessc_make.js",
   "author": "Maarten de Vries <maarten@de-vri.es>",
   "license": "BSD-3-Clause",
   "private": false,
+  "bin": {
+    "lessc-make": "./src/lessc_make.js"
+  },
   "dependencies": {
+    "chalk": "^2.4.0",
     "command-line-args": "^5.0.2",
-    "command-line-usage": "^5.0.4",
-    "less": "^3.0.2",
-    "yargs": "^11.0.0"
+    "less": "^3.0.2"
   }
 }

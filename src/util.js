@@ -1,4 +1,3 @@
-'use strict';
 /*
  * Copyright 2017-2018 Maarten de Vries <maarten@de-vri.es>
  *
@@ -27,6 +26,7 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
+'use strict';
 
 const fs   = require('fs');
 const path = require('path');

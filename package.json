@@ -1,0 +1,15 @@
+{
+  "name": "lesscss-make",
+  "version": "0.1.0",
+  "description": "front-end for lesscss that works well with Makefiles",
+  "main": "index.js",
+  "author": "Maarten de Vries <maarten@de-vri.es>",
+  "license": "BSD-3-Clause",
+  "private": false,
+  "dependencies": {
+    "command-line-args": "^5.0.2",
+    "command-line-usage": "^5.0.4",
+    "less": "^3.0.2",
+    "yargs": "^11.0.0"
+  }
+}

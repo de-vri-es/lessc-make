@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 'use strict';
 /*
  * Copyright 2017-2018 Maarten de Vries <maarten@de-vri.es>

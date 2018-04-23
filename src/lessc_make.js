@@ -222,14 +222,11 @@ function renderLess(options) {
 }
 
 function generateDepends(less_result, target, phony) {
-	// Escape the dependencies for use in a makefile.
-	const escaped_depends = less_result.imports.map(util.escapeShell);
-
 	// Add the dependencies themselves.
-	let result = target + ': ' + escaped_depends.join(' ') + '\n';
+	let result = target + ': ' + less_result.imports.join(' ') + '\n';
 
 	// Add phony targets if requested.
-	if (phony) result += escaped_depends.join(':\n') + ':\n';
+	if (phony) result += less_result.imports.join(':\n') + ':\n';
 
 	return result;
 }

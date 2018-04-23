@@ -245,7 +245,8 @@ function renderAndWriteLess(options) {
 
 		// Write the source map.
 		if (options.source_map) {
-			promises.push(util.writeFile(options.source_map, result.map + '\n'));
+			const map = result.map ? result.map + '\n' : '';
+			promises.push(util.writeFile(options.source_map, map));
 		}
 
 		// Write the dependency file.

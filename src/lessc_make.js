@@ -251,7 +251,7 @@ function renderAndWriteLess(options) {
 		// Write the dependency file.
 		if (options.depends) {
 			const dependencies = generateDepends(result, options.depends_target, options.depends_phony);
-			promises.push(util.writeFileOrStdout(options.depends, dependencies));
+			promises.push(util.writeFile(options.depends, dependencies));
 		}
 
 		return Promise.all(promises);
